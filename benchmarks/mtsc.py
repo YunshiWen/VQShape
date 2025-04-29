@@ -72,7 +72,7 @@ def get_embedding(lit_model, loader, desc="Embedding"):
         for _, x, y, _ in tqdm(loader, desc=desc):
             x = uea_normalize(x, sequence_length)
             representations, _ = model(x.to(device), mode='tokenize')
-            rep_tokens.append(representations['tokens'].cpu())
+            rep_tokens.append(representations['token'].cpu())
             rep_histograms.append(representations['histogram'].cpu())
             labels.append(y)
     
