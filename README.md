@@ -1,15 +1,10 @@
-# VQShape
+<div align="center">
+    <h3><a href="https://openreview.net/forum?id=pwKkNSuuEs">Abstracted Shapes as Tokens - A Generalizable and Interpretable Model for Time-series Classification</a></h3>
+    <h4>NeurIPS 2024</h4>
+    <h4>Yunshi Wen, Tengfei Ma, Tsui-Wei Weng, Lam M. Nguyen, Anak Agung Julius</h4>
+</div>
 
 VQShape is a pre-trained model for time-series analysis. The model provides shape-level features as interpretable representations for time-series data. The model also contains a universal codebook of shapes that generalizes to different domains and datasets. The current checkpoints are pre-trained on the UEA multivariate time-series classification datasets [[Bagnall et al., 2018]](https://timeseriesclassification.com/). 
-
-For more details, please refer to our paper: \
-[Abstracted Shapes as Tokens - A Generalizable and Interpretable Model for Time-series Classification](https://openreview.net/forum?id=pwKkNSuuEs)\
- (NeurIPS 2024)\
-**Authors**: Yunshi Wen, Tengfei Ma, Tsui-Wei Weng, Lam M. Nguyen, Anak Agung Julius
-
-
-> [!NOTE]
-> This repository is still under construction since we are still working on cleaning up the source code. We aim to update this repository every one or two weeks. Future updates will include benchmarking scripts for forecasting, and imputation.
 
 
 ## Usage
@@ -84,12 +79,8 @@ Specify the codebook size and the embedding dimension. For benchmarking of the U
 bash ./scripts/mtsc.sh 64 512
 ```
 
-#### 3. Forecasting
-(Coming soon.)
-
-#### 4. Imputation
-(Coming soon.)
-
+#### 3. Visualize the Codebook
+See [this notebook](notebooks/visualization.ipynb) for examples of visualizing the codebook and code distribution.
 
 ## Pre-trained Checkpoints
 We provide the pre-trained checkpoints on the UEA time-series classification datasets, which produce the results in the [paper](https://openreview.net/forum?id=pwKkNSuuEs).
